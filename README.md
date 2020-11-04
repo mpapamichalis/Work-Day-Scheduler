@@ -6,6 +6,6 @@ For easy viewing, each time block on the calendar is color-coded to indicate pas
 
 https://mpapamichalis.github.io/Work-Day-Scheduler/
 
-![ScreenShot](Capture.png)
+<img src= "./images/Capture.png">
 
 ![day planner demo](05-third-party-apis-homework-demo.gif)
