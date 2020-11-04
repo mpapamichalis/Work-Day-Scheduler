@@ -1,5 +1,7 @@
+//Function for working calendar
 $(document).ready(function(){
     var currentHour = moment().hour();
+    //Current day displayed using moment.js
     var today = moment().format('MMMM Do YYYY');
     $("#currentDay").text(today);
     var timeBlocks = $(".time-block");
@@ -9,7 +11,7 @@ $(document).ready(function(){
         localStorage.setItem(hour, textArea);
 
     });
-
+//code to distinguish via different colors the hours of the day as current/ past/ present
     $(timeBlocks).each(function(){
         var timeBlock = $(this);
         var timeBlockId = timeBlock.attr('id');
@@ -23,7 +25,7 @@ $(document).ready(function(){
         }
 
     });
-
+// Local storage set up for each hour's textbox to display anything saved in each hour box.
     $("#hour-9 .description").val(localStorage.getItem("hour-9"));
     $("#hour-10 .description").val(localStorage.getItem("hour-10"));
     $("#hour-11 .description").val(localStorage.getItem("hour-11"));
